@@ -25,7 +25,11 @@ module.exports = {
         test: /\.(js|jsx)$/i,
         use: { loader: 'babel-loader' },
         exclude: /node_modules/
-      }
+      },
+      {
+        test: /\.(png|gif|svg|jpg|jpeg)$/i,
+        type: 'asset/resource'
+      },
     ],
   },
 };
